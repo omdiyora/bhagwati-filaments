@@ -15,7 +15,7 @@ const teamMembers = [
         image: denishImage
     },
     {
-        name: "Dishantk Patel",
+        name: "Dishant Patel",
         role: "Co-Founder",
         bio: "Ensures seamless production workflows and maintains the highest quality standards across all product lines.",
         image: dishantkImage,
