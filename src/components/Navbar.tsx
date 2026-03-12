@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
+  { label: "Team", path: "/team" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -26,11 +27,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-dark-surface/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-3">
@@ -43,11 +43,10 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`font-body text-sm font-medium transition-colors duration-200 hover:text-primary ${
-                location.pathname === link.path
+              className={`font-body text-sm font-medium transition-colors duration-200 hover:text-primary ${location.pathname === link.path
                   ? "text-primary"
                   : "text-dark-surface-foreground/80"
-              }`}
+                }`}
             >
               {link.label}
             </Link>
@@ -77,11 +76,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`font-body text-base py-2 transition-colors ${
-                  location.pathname === link.path
+                className={`font-body text-base py-2 transition-colors ${location.pathname === link.path
                     ? "text-primary"
                     : "text-dark-surface-foreground/80"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
